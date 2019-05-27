@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#3e2723</color>
+  <color name="colorPrimaryDark">#1b0000</color>
+  <color name="colorSecondary">#339966</color>
+  <color name="colorSecondary_a30">#4B339966</color>
+  <color name="colorLabelContrast">#FFFFFF</color>
+  <color name="colorFullScreenDialogBg">#99999999</color>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">My Thai Star</string>
+
+    <!-- Navigation drawer -->
+    <string name="navigation_home">@string/screen_home_title</string>
+    <string name="navigation_menu">Menu</string>
+    <string name="navigation_book_table">Book table</string>
+    <string name="navigation_location">Location</string>
+    <string name="navigation_gallery">Gallery</string>
+    <string name="navigation_news">News</string>
+    <string name="navigation_contacts">Contacts</string>
+
+    <!-- Home clazz -->
+    <string name="screen_home_title">My Thai Star</string>
+    <string name="screen_home_welcome_label">@string/app_name</string>
+    <string name="screen_home_welcome_foot">More than just delicious food</string>
+    <string name="screen_home_item_invite_title">Our restaurant</string>
+    <string name="screen_home_item_invite_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="screen_home_item_book_table_button_label">Book Table</string>
+    <string name="screen_home_item_menu_title">Our menu</string>
+    <string name="screen_home_item_menu_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="screen_home_item_menu_button_label">View menu</string>
+
+    <!-- Booking clazz -->
+    <string name="screen_booking_title">Book table</string>
+    <string name="screen_booking_welcome_label">You can invite your friends to lunch or book a table</string>
+    <string name="screen_booking_invite_label">Invite friends</string>
+    <string name="screen_booking_book_table_label">Book table</string>
+
+    <!-- Invite friends view -->
+    <string name="view_invite_friends_welcome_label">Add your information and friends</string>
+    <string name="view_invite_friends_date_hint">Date and time</string>
+    <string name="view_invite_friends_name_hint">Name</string>
+    <string name="view_invite_friends_email_hint">Email</string>
+    <string name="view_invite_friends_friends_hint">Friends</string>
+    <string name="view_invite_friends_accept_terms_label">Accept %s</string>
+    <string name="view_invite_friends_terms">terms</string>
+    <string name="view_invite_friends_invite_button_label">Invite friends</string>
+
+    <!-- Book table view -->
+    <string name="view_book_table_welcome_label">Book your table</string>
+    <string name="view_book_table_date_hint">Date and time</string>
+    <string name="view_book_table_name_hint">Name</string>
+    <string name="view_book_table_email_hint">Email</string>
+    <string name="view_book_table_adults_hint">Adults</string>
+    <string name="view_book_table_accept_terms_label">Accept %s</string>
+    <string name="view_book_table_terms">terms</string>
+    <string name="view_book_table_invite_button_label">Book table</string>
+
+    <!-- Menu clazz -->
+    <string name="screen_menu_title">Menu</string>
+
+    <!-- Location clazz -->
+    <string name="screen_location">Location</string>
+
+    <!-- Gallery -->
+    <string name="screen_gallery">Gallery</string>
+
+    <!-- News clazz -->
+    <string name="screen_news">News</string>
+    <string name="screen_news_addNews">Add News</string>
+    <string name="screen_news_delete_news__text">Delete News</string>
+    <string name="screen_news_add">ADD</string>
+    <string name="screen_news_cancel">Cancel</string>
+    <string name="screen_news_sure">Are you sure ?</string>
+    <string name="screen_news_delete_yes">Yes</string>
+    <string name="screen_news_delete_no">No</string>
+    <string name="screen_news_loadPicture">Click to load Picture</string>
+    <string name="screen_news_defaultPicture">if you do not load a picture, the default picture will be used</string>
+    <string name="screen_news_titleHint">Title</string>
+    <string name="screen_news_descriptionHint">Description</string>
+
+    <!-- Contacts clazz -->
+    <string name="screen_contacts">Contacts</string>
+    <string name="screen_contacts_nummerUnderLine"><u>0123456789</u></string>
+    <string name="screen_contacts_emailUnderLine"><u>example@gmail.com</u></string>
+    <string name="screen_contacts_telefon">Telefon</string>
+    <string name="screen_contacts_email">E-Mail</string>
+
+
+    <string name="no_email_installed">There are no email clients installed</string>
+    <string name="dollar_sign">$</string>
+    <string name="search_by">Search by…</string>
+    <string name="filter">Filter</string>
+    <string name="wrong_search">Nothing found! Try again!</string>
+    <string name="accept">Accept</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="navigation_login">My account</string>
+    <string name="screen_login">My account</string>
+
+    <string name="empty_string"></string>
+    <string name="set_maxmimum_price">Set Maximum Price:</string>
+    <string name="number_of_guests">Number of guests:</string>
+    <string name="date">Date</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="guests">Guests</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="add_to_order">ADD TO ORDER</string>
+    <string name="wrong_name_msg">Provide proper username</string>
+    <string name="wrong_password_msg">Provide proper password</string>
+    <string name="auth_token_tag">authorizationToken</string>
+    <string name="nice_job_your_token_is">Nice job, your token is:</string>
+    <string name="connection_problem">Connection Problem!</string>
+
+</resources>

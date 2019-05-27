@@ -1,0 +1,15 @@
+apply plugin: "com.github.ben-manes.versions"
+
+// Show only stable builds in dependency updates
+dependencyUpdates.resolutionStrategy = {
+  componentSelection { rules ->
+    rules.all { ComponentSelection selection ->
+      boolean rejected = ["alpha", "beta", "rc", "cr", "m"].any { qualifier ->
+        selection.candidate.version ==~ /(?i).*[.-]${qualifier}[\s\S-]*/
+      }
+      if (rejected) {
+        selection.reject("Release candidate")
+      }
+    }
+  }
+}

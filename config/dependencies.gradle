@@ -1,0 +1,45 @@
+ext.versions = [
+    versionCode      : System.getenv("BUILD_NUMBER") as Integer ?: 0,
+    versionName      : System.getenv("VERSION") as String ?: "IDE",
+
+    minSdk           : 21,
+    targetSdk        : 27,
+    compileSdk       : 27,
+    buildTools       : "27.1.0",
+
+    kotlin           : "1.2.31",
+    androidGradle    : "3.0.1",
+    dokka            : "0.9.15",
+    dependencyVersion: "0.17.0",
+
+    supportLibs      : "27.1.0",
+    constraintLayout : "1.0.2",
+    dagger           : "2.11",
+    jsr330           : "1",
+
+    junit            : "4.12",
+    truth            : "0.34",
+    espresso         : "2.2.2",
+]
+
+ext.gradlePlugins = [
+    android          : "com.android.tools.build:gradle:${versions.androidGradle}",
+    kotlin           : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+    dokka            : "org.jetbrains.dokka:dokka-gradle-plugin:${versions.dokka}",
+    dependencyVersion: "com.github.ben-manes:gradle-versions-plugin:${versions.dependencyVersion}",
+]
+
+ext.libraries = [
+    kotlin          : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
+    supportAppCompat: "com.android.support:appcompat-v7:${versions.supportLibs}",
+    supportDesign   : "com.android.support:design:${versions.supportLibs}",
+    supportCardView : "com.android.support:cardview-v7:${versions.supportLibs}",
+    constraintLayout: "com.android.support.constraint:constraint-layout:${versions.constraintLayout}",
+    jsr330          : "javax.inject:javax.inject:${versions.jsr330}",
+    dagger          : "com.google.dagger:dagger:${versions.dagger}",
+    daggerCompiler  : "com.google.dagger:dagger-compiler:${versions.dagger}",
+
+    junit           : "junit:junit:${versions.junit}",
+    truth           : "com.google.truth:truth:${versions.truth}",
+    espresso        : "com.android.support.test.espresso:espresso-core:${versions.espresso}",
+]

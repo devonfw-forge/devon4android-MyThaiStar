@@ -1,0 +1,82 @@
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-kapt"
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    defaultConfig {
+        applicationId "com.devonfw.mythaistar"
+        versionCode versions.versionCode
+        versionName versions.versionName
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-DEBUG"
+
+            debuggable true
+            minifyEnabled false
+            useProguard false
+            shrinkResources false
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            useProguard true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    sourceSets {
+        main.java.srcDirs "src/main/kotlin"
+        test.java.srcDirs "src/test/kotlin"
+        androidTest.java.srcDirs "src/testAndroid/kotlin"
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation libraries.kotlin
+    implementation libraries.supportAppCompat
+    implementation libraries.supportDesign
+    implementation libraries.supportCardView
+    implementation libraries.constraintLayout
+    implementation libraries.dagger
+
+    implementation 'com.squareup.okhttp3:okhttp:3.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.2.31"
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    kapt libraries.daggerCompiler
+    testImplementation libraries.junit
+    testImplementation libraries.truth
+    androidTestImplementation(libraries.espresso, {
+        exclude group: "com.android.support", module: "support-annotations"
+    })
+    implementation 'com.google.android.gms:play-services-maps:12.0.0'
+    implementation 'com.google.android.gms:play-services-location:12.0.0'
+
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation 'com.wdullaer:materialdatetimepicker:3.5.1'
+
+    implementation 'com.android.support:support-v13:27.1.0'
+    implementation 'com.facebook.fresco:fresco:1.8.1'
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+}
+

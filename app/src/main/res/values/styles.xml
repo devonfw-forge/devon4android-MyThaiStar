@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AppTheme" parent="Base.V0.AppTheme"/>
+  <style name="Base.V0.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorSecondary</item>
+    <item name="android:buttonStyle">@style/AppTheme.Button.Main</item>
+  </style>
+  <style name="BookingConfirmDialogStyle" parent="Theme.AppCompat">
+    <item name="android:textSize">20dp</item>
+    <item name="android:textColor">@android:color/black</item>
+  </style>
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    <item name="colorControlHighlight">@color/colorLabelContrast</item>
+    <item name="android:textColorHint">@android:color/darker_gray</item>
+    <item name="android:editTextColor">@color/colorLabelContrast</item>
+  </style>
+  <style name="AppTheme.Button.Main" parent="Widget.AppCompat.Button">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="backgroundTint">@color/colorSecondary</item>
+  </style>
+  <style name="AppTheme.Button.Transparent" parent="Widget.AppCompat.Button.Borderless">
+    <item name="android:textColor">@color/colorSecondary</item>
+    <item name="android:background">@drawable/transparent_button_ripple</item>
+  </style>
+  <style name="AddNewsCustomDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="DeleteNewsDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorPrimary">@color/colorPrimary</item>
+  </style>
+
+  <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowBackground">@color/colorFullScreenDialogBg</item>
+  </style>
+
+</resources>
